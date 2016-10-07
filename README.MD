@@ -59,7 +59,7 @@ ext{
 }
 
 //这一行不用的时候建议注释掉，因为国外DNS的原因，有时候会找不到dns的,导致编译失败
-apply from : "https://raw.githubusercontent.com/hangox/bintray-push/release/upload.gradle"
+apply from : "https://raw.githubusercontent.com/hangox/bintray-push/v1.0/upload.gradle"
 ```
 
 最后的项目引用将会是这样：`eGroup:eArtifactId:eVersion`
