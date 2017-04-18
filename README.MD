@@ -1,7 +1,9 @@
-##介绍
+## 介绍
 这是一个简化上传到jcenter的简单脚本
-##使用方法
-####编辑gradle.properties 文件
+
+## 使用方法
+
+#### 编辑gradle.properties 文件
 gradle.properties 文件有两个地方，一个在项目本身里，一个在系统里。我建议这种每次都一样的配置直接放在系统里面
 
 ```bash
@@ -23,7 +25,7 @@ DEVELOPER_EMAIL=liang.hanguang93@gmail.com
 ```
 退出保存即可。
 
-####编辑项目的build.gradle
+#### 编辑项目的build.gradle
 加入两个插件的引用
 
 ```gradle
@@ -42,7 +44,8 @@ buildscript {
 }
 ```
 
-####编辑library 的build.gradle
+#### 编辑library 的build.gradle
+
 在想要上传的module的build.gradle加入
 
 ```groovy
@@ -66,16 +69,18 @@ apply from : "https://raw.githubusercontent.com/hangox/bintray-push/v1.0/upload.
 对于我这个项目，也就是 `com.hangox:polygon-imageview:1.0`
 
 
-####开始上传
+#### 开始上传
+
 运行
 
 ```gradle
 gradle bintrayUpload
 ```
 
-####jcenter 上申请通过
+#### jcenter 上申请通过
 
-##感谢
+## 感谢
+
 [gradle-publish](https://github.com/msdx/gradle-publish)
 
 
