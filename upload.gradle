@@ -36,7 +36,6 @@ javadoc {
 
 artifacts {
     archives sourcesJar
-    archives javadocJar
 }
 
 install {
